@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Caveat:wght@700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-cursive: "Caveat", cursive;
+  
+  --color-coffee-bg: #D9D9D9;
+  --color-coffee-dark: #898989;
+  --color-coffee-light: #f3f4f6;
+  --color-coffee-accent: #6b7280;
+}
+
+body {
+  background-color: var(--color-coffee-bg);
+  color: #1a1a1a;
+  font-family: var(--font-sans);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark body {
+  background-color: #1a1a1a;
+  color: #f3f4f6;
+}
+
+.dark .bg-white {
+  background-color: #2d2d2d;
+}
+
+.dark .text-gray-900 {
+  color: #f3f4f6;
+}
+
+.dark .text-gray-500 {
+  color: #9ca3af;
+}
+
+.dark .border-gray-100 {
+  border-color: #404040;
+}
+
+.dark .bg-gray-50 {
+  background-color: #404040;
+}
+
+/* Hide scrollbar for category selector */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
